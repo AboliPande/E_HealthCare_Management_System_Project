@@ -1,0 +1,179 @@
+<div class="container-fluid" style="padding: 0;">
+    <div class="row align-items-center" style="margin: 0;height: 68rem;">
+        <div class="col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6 col-xxl-6" style="padding: 0;">
+            <img src="https://img.freepik.com/free-vector/isometic-pattern-with-security-password-data-technology-communication-computer-cartoon-character-flat-illustration_1150-39672.jpg?size=626&ext=jpg&ga=GA1.2.350965779.1691065450&semt=ais"
+                alt="" style="height: 68rem;
+                width: 776px;
+                margin-left: 2px;">
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4 col-xxl-4"
+            style="padding: 0;margin-left: 9rem;height: 51rem;">
+            <div class="card card_div opacity-75">
+                <div class="card-header text-center">Update Patient</div>
+                <div class="card-body">
+                    <div class="form_div">
+                        <form [formGroup]="updatePatientForm" (ngSubmit)="updatePatient()">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="patient_id" placeholder="Example: 01"
+                                    formControlName="patient_id" [(ngModel)] = "patient.patient_id">
+                                <label for="patient_id">Patient's Id</label>
+                            </div>
+                            <div class="alert alert-danger"
+                                *ngIf="patient_id && patient_id.invalid && patient_id.touched">
+                                <div *ngIf="patient_id.errors?.['required']">
+                                    Patient Id is Required
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="patient_name" placeholder="Example: Aboli Pande"
+                                    formControlName="patient_name" [(ngModel)] = "patient.patient_name">
+                                <label for="patient_name">Patient's Name</label>
+                            </div>
+                            <div class="alert alert-danger"
+                                *ngIf="patient_name && patient_name.invalid && patient_name.touched">
+                                <div *ngIf="patient_name.errors?.['required']">
+                                    Patient's Name is Required
+                                </div>
+                                <div *ngIf="patient_name.errors?.['pattern']">
+                                    It should not contain a digit and any special symbol
+                                </div>
+                            </div>
+                            <div class="form-floating">
+                                <select class="form-select" id="gender" aria-label="Floating label select example"
+                                    formControlName="gender" [(ngModel)] = "patient.gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <label for="gender">Gender</label>
+                            </div>
+                            <div class="alert alert-danger"
+                                *ngIf="Gender && Gender.invalid && Gender.touched">
+                                <div *ngIf="Gender.errors?.['required']">
+                                    Gender is Required
+                                </div>
+                            </div>
+                            <!--<div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="dob" placeholder="Date Of Birth"
+                                    formControlName="dob">
+                                <label for="dob">Date Of Birth</label>
+                            </div>
+                            <div class="alert alert-danger" *ngIf="Dob && Dob.touched && Dob.invalid">
+                                <div *ngIf="Dob.errors?.['required']">
+                                    Date of birth is required
+                                </div>
+                            </div>-->
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Your Address" id="address"
+                                    style="height: 100px" formControlName="address" [(ngModel)] = "patient.address"></textarea>
+                                <label for="address">Address</label>
+                            </div>
+                            <div class="alert alert-danger"
+                                *ngIf="Address && Address.invalid && Address.touched">
+                                <div *ngIf="Address.errors?.['required']">
+                                    Address is Required
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="num" class="form-control" id="contact_no" placeholder="Your Phone No"
+                                    formControlName="contact_no" [(ngModel)] = "patient.contact_no">
+                                <label for="contact_no">Contact No</label>
+                            </div>
+                            <div class="alert alert-danger" *ngIf="Contact_No && Contact_No.touched && Contact_No.invalid">
+                                <div *ngIf="Contact_No.errors?.['required']">
+                                    Contact No is required
+                                </div>
+                                <div *ngIf="Contact_No.errors?.['pattern']">
+                                    Contact No should not contain any digit or a special symbol
+                                </div>
+                                <div *ngIf="Contact_No.errors?.['minlength']">                                   
+                                     It should be a 10 digit number
+                                </div>
+                                <div *ngIf="Contact_No.errors?.['maxlength']">                                   
+                                    Its not a valid number
+                               </div>
+                            </div>
+                            <!--<div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="doctor_id" placeholder="Example: 01"
+                                    formControlName="doctor_id" [(ngModel)] = "patient.doctor_id">
+                                <label for="doctor_id">Doctor's Id</label>
+                            </div>
+                            <div class="alert alert-danger"
+                                *ngIf="doctor_id && doctor_id.invalid && doctor_id.touched">
+                                <div *ngIf="doctor_id.errors?.['required']">
+                                    Doctor Id is Required
+                                </div>
+                            </div>-->
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="app_date" placeholder="Appointment Date"
+                                    formControlName="app_date" [(ngModel)] = "patient.app_date">
+                                <label for="app_date">Appointment Date</label>
+                            </div>
+                            <div class="alert alert-danger" *ngIf="app_date && app_date.touched && app_date.invalid">
+                                <div *ngIf="app_date.errors?.['required']">
+                                    Appointment Date is required
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="payment" placeholder="Payment"
+                                    formControlName="payment" [(ngModel)] = "patient.payment">
+                                <label for="payment">Payment</label>
+                            </div>
+                            <div class="alert alert-danger"
+                                *ngIf="payment && payment.invalid && payment.touched">
+                                <div *ngIf="payment.errors?.['required']">
+                                    Payment is Required
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email_id" placeholder="name@example.com"
+                                    formControlName="email_id" [(ngModel)] = "patient.email_id">
+                                <label for="email_id">Email Id</label>
+                            </div>
+                            <div class="alert alert-danger"
+                                *ngIf="Email_id && Email_id.invalid && Email_id.touched">
+                                <div *ngIf="Email_id.errors?.['required']">
+                                    Email Id is Required
+                                </div>
+                                <div *ngIf="Email_id.errors?.['pattern']">
+                                    Email Id is not in the correct format
+                                </div>
+                            </div>
+                            <!--<div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="username" placeholder="Username"
+                                    formControlName="username" [(ngModel)] = "patient.username">
+                                <label for="username">Username</label>
+                            </div>
+                            <div class="alert alert-danger" *ngIf="Username && Username.touched && Username.invalid">
+                                <div *ngIf="Username.errors?.['required']">
+                                    Username is required
+                                </div>
+                                <div *ngIf="Username.errors?.['pattern']">
+                                    Username must not contain any whitespace
+                                </div>
+                            </div>-->
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="txt_password" placeholder="Password"
+                                    formControlName="password" [(ngModel)] = "patient.password">
+                                <label for="txt_password">Password</label>
+                            </div>
+                            <div class="alert alert-danger" *ngIf="Password && Password.touched && Password.invalid">
+                                <div *ngIf="Password.errors?.['required']">
+                                    Password is required
+                                </div>
+                                <div *ngIf="Password.errors?.['pattern']">
+                                    Password is must be of atleast 8 characters long,must contain 1 uppercase,1 lowercase and a special symbol and a digit
+                                </div>
+                            </div>
+                                <button  type="submit" class="btn btn-outline-success update_patient" [disabled]="updatePatientForm.invalid">Update Patient</button>
+                                <button type="reset" class="btn btn-outline-warning clearbtn">Clear</button>
+                                <div id="spin" class="spinner-border text-success spinner_div" role="status"
+                                *ngIf="isLoading;">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

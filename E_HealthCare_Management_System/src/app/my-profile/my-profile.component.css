@@ -1,0 +1,104 @@
+h5{
+    font-style: italic;
+    font-weight: bolder;
+    position: absolute;
+    left: 9.5rem;
+    top: 1rem;
+}
+
+.row{
+    width: 45rem;
+    height: 36rem;
+}
+.col-md-4{
+    width: 47.333333%;
+}
+/*.col-md-8{
+    width: 52.666667%;
+}*/
+.icon_div{
+    width: 38.333333%;
+    height: 0;
+    position: absolute;
+    left: 0rem;
+    font-size: 18rem;
+    background-color: white;
+}
+/*.text-bg-warning{
+    background-color: #161615;
+}*/
+label{
+    color: black;
+    font-style: italic;
+    font-size: larger;
+    font-family: cursive;
+    font-weight: bolder;
+}
+i{
+    font-size: 18rem;
+    color: white;
+    background-color: #A8001F;
+    height: 18rem;
+    width: 16rem;
+    margin-left: 4rem;
+}
+.form_div{
+    width: 52.666667%;
+}
+.profile_info{
+    width: 47.333333%;
+    height: 0;
+}
+/*.form-floating input{
+    padding-right: 19rem;
+}*/
+.form-floating select{
+    margin-bottom: 2rem;
+}
+.form-floating input[type="date"]{
+    margin-bottom: 2rem;
+    width: 24rem;
+}
+.spinner_div{
+    position: absolute;
+    top: 21rem;
+    left: 18rem;
+}
+.text-success{
+    background-color: rgb(255, 234, 0);
+}
+.form-floating textarea{
+    margin-bottom: 2rem;
+    width: 24rem;
+}
+.clearbtn{
+    margin-top: 3rem;
+    width: 11rem;
+    height: 3rem;
+    position: absolute;
+    left: 22rem;
+    bottom: 2rem;
+    color: bisque;
+    font-size: 23px;
+    font-style: italic;
+    font-family: cursive;
+}
+.clearbtn:hover{
+    color: black;
+    font-style: italic;
+    font-family: cursive;
+}
+.submit_btn{
+    margin-top: 3rem;
+    width: 11rem;
+    height: 3rem;
+    color: bisque;
+    font-size: 28px;
+    font-style: italic;
+    font-family: auto;
+}
+.submit_btn:hover{
+    color: black;
+    font-style: italic;
+    font-family: auto;
+}

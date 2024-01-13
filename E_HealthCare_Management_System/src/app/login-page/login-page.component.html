@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 col-xxl-12" style="height: 100%;">
+            <img src="https://media.istockphoto.com/id/855597368/photo/attentive-nursing-students-in-class.jpg?b=1&s=170667a&w=0&k=20&c=ixkyEOMlfEoAkTBEiDqlJhuI6x9wdEdyN6_UD4uOWec="
+                alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4 col-xxl-4 top_right">
+            <div class="card" style="width: 18rem;height:56rem;width: 28rem;">
+                <img src="https://img.freepik.com/free-vector/health-day-background-design_1142-709.jpg?size=626&ext=jpg&ga=GA1.2.934152324.1683698759&semt=ais"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-3 mt-3">Admin Login</h5>
+                    <div class="login_div">
+                        <form [formGroup]="loginForm" (ngSubmit)="loginFormSubmit()">
+                            <img id="login_bg"
+                                src="https://img.freepik.com/free-photo/abstract-view-modern-architecture_1359-522.jpg?w=1060&t=st=1683781768~exp=1683782368~hmac=b871ee5b273c668f21b1a3d24a30b3360092d5f96db27b8642c22003f11ae392"
+                                alt="" style="height: 36rem;border: 3px solid rgb(0, 255, 0);">
+                                <div class="form-floating email_div mb-3 mt-3">
+                                    <input type="email" class="form-control input1" id="txt_emailId" name="emailId"
+                                        formControlName="emailId" placeholder="name@example.com" >
+                                    <label for="txt_emailId">Email address</label>
+                                </div>
+                                <div class="alert alert-danger" *ngIf="emailId && emailId.invalid && emailId.touched">
+                                    <div *ngIf="emailId.errors?.['required']">
+                                        Email Id is Required
+                                    </div>
+                                    <div *ngIf="emailId.errors?.['pattern']">
+                                        Email Id is not in a Valid Format
+                                    </div>
+                                </div>
+                            <div class="form-floating mb-3 password_div" style="margin-top: 5rem;">
+                                <input type="password" class="form-control input1" id="txt_password"
+                                    placeholder="Password" name="password" formControlName="password">
+                                <label for="txt_password">Password</label>
+                            </div>
+                            <div class="alert alert-danger" *ngIf="password && password.invalid && password.touched">
+                                <div *ngIf="password.errors?.['required']">
+                                    Password is Required
+                                </div>
+                                <div *ngIf="password.errors?.['pattern']">
+                                    Password is not valid
+                                </div>
+                            </div>
+                            <button type="reset" class="btn btn-outline-warning clearbtn">Clear</button>
+                            <button type="submit" class="btn btn-outline-success loginbtn"
+                                [disabled]="loginForm.invalid">Login</button>
+                            <div id="spin" class="spinner-border text-success spinner_div" role="status"
+                                *ngIf="isLoading;">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

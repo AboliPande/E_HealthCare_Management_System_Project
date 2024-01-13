@@ -1,0 +1,54 @@
+th{
+    width: 11rem;
+}
+
+.main_div{
+    padding-left: 11rem;
+    padding-top: 11rem;
+    padding-bottom: 82rem;
+    background-color: white;
+}
+.updatebtn{
+    margin-right: 1rem;
+    width: 7rem;
+    font-weight: 500;
+}
+.deletebtn{
+    width: 7rem;
+    font-weight: 500;
+}
+table{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    position: absolute;
+    left: 1rem;
+}
+thead tr{
+    /* background-color: #009879; */
+    background-color: #A8001F;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+table th,td{
+    padding: 12px 15px;
+    font-size: larger;
+}
+
+table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    background-color: #e2e3e5;
+}
+
+table tbody td{
+    font-size: larger;
+    font-weight: 500;
+}
+.viewbtn{
+    margin-left: 1rem;
+    color: black;
+    font-weight: 500;
+    width: 8rem;
+}

@@ -1,0 +1,181 @@
+.container-fluid {
+    margin: 0%;
+    padding: 0%;
+}
+
+img {
+    width: 100%;
+}
+.text-success{
+    background-color: rgb(255, 234, 0);
+}
+.card{
+    border: #f6ea05 3px solid;
+    border-radius: 10px;
+}
+.card-img-top {
+    height: 203px;
+}
+.spinner_div{
+    position: absolute;
+    top: 242px;
+    left: 187px;
+}
+.email_div {
+    position: absolute;
+    top: 14%;
+    left: 15%;
+}
+.card-title{
+    color: #0d45eb;
+    font-size: x-large;
+    font-family: cursive;
+}
+.password_div {
+    position: absolute;
+    top: 111px;
+    left: 61px;
+}
+
+.top_right {
+    position: absolute;
+    top: 141px;
+    left: 233px;
+}
+
+.login_div {
+    position: relative;
+    text-align: center;
+    margin-top: 27px;
+}
+.clearbtn{
+    position: absolute;
+    top: 384px;
+    left: 45px;
+    width: 133px;
+    color: #f7f8fb;
+    font-size: large;
+    font-weight: bolder;
+}
+.loginbtn{
+    position: absolute;
+    top: 383px;
+    left: 232px;
+    width: 133px;
+    color: #f7f8fb;
+    font-size: large;
+    font-weight: bolder;
+}
+.admin_div {
+    position: absolute;
+    top: 216px;
+    left: 151px;
+}
+.alert-danger{
+    --bs-alert-bg:#dd8c93;
+}
+.form-control{
+    padding-right: 100px;
+}
+.doctor_div {
+    position: absolute;
+    top: 269px;
+    left: 150px;
+}
+.patient_div{
+    position: absolute;
+    top: 322px;
+    left: 150px;
+}
+.form-check label{
+    color: rgb(239, 200, 238);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 8px;
+}
+.form-check-input:checked{
+    background-color: #f60505;
+}
+.no-account-header{
+    position: absolute;
+    top: 449px;
+    left: 104px;
+    color: aliceblue;
+    font-size: larger;
+}
+.card-body{
+    background-color: #dbdbc2;
+}
+.signupbtn{
+    position: absolute;
+    top: 500px;
+    left: 140px;
+    width: 133px;
+    color: #f7f8fb;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.input1.ng-invalid{
+    border-left: 10px solid red;    
+    }
+.input1.ng-valid{
+        border-left:10px solid green ;
+}
+/*.container{
+    margin: 0%;
+    padding: 0%;
+}
+img{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.row{
+    height: 100%;
+    width: 124%;
+}
+.col-md-6 img{
+    width: 51%;
+}
+.col-md-6 h2{
+    width:113%;
+}
+.formdiv{
+    color: cadetblue;
+    padding: 0;
+    margin-right: 0px;
+    margin-top: 20px;
+    background-color: rgb(235, 235, 132);
+}
+h2{
+    text-align: center;
+}
+img{
+    position: absolute;
+}
+.container-fluid{
+    padding: 0;
+}
+.loginform{
+    display: inline;
+    text-align: center;
+}
+h1{
+    display: inline;
+    font-size: xx-large;
+    font-family: auto;
+    font-weight: 800;
+    color: #ea7724;
+}
+.heading{
+    margin-top: 60px;
+}
+.seconddiv{
+    background-color: brown;
+    padding: 0;
+}
+p{
+    margin-left: 10px;
+}*/

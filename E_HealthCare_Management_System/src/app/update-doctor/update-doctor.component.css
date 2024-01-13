@@ -1,0 +1,86 @@
+.card_div{
+    width: 28rem;
+    height: 66rem;
+    background-color: #A8001F;
+    color: aliceblue;
+    font-size: 29px;
+    margin-left: 21px;
+    border-radius: 23px;
+    margin-top: -8rem;
+}
+.spinner_div{
+    position: absolute;
+    top: 242px;
+    left: 187px;
+}
+.text-success{
+    background-color: rgb(255, 234, 0);
+}
+.form_div div{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+.form_div{
+    margin-top: 6px;
+}
+.card-header{
+    font-family: 'bootstrap-icons';
+    color: white;
+    margin-top: 6px;
+}
+.btn{
+    width: 150px;
+    height: 41px;
+    margin-left: 135px;
+    margin-top: 0px;
+}
+input{
+    color: black;
+    font-weight: 500;
+}
+.row .align-items-center{
+    height: 97rem;
+}
+.clearbtn{
+    margin-top: 3rem;
+    width: 10rem;
+    height: 3rem;
+    position: absolute;
+    left: 7rem;
+    bottom: 2rem;
+    color: white;
+    font-size: 23px;
+    font-style: italic;
+    font-family: cursive;
+}
+.clearbtn:hover{
+    color: black;
+    font-style: italic;
+    font-family: cursive;
+}
+.submitbtn{
+    margin-top: 9rem;
+    width: 12rem;
+    height: 3rem;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    font-family: auto;
+    position: absolute;
+    bottom: 2rem;
+    right: 14rem;
+}
+.submitbtn:hover{
+    color: black;
+    font-style: italic;
+    font-family: auto;
+}
+.text-success{
+    background-color: rgb(255, 234, 0);
+}
+.spinner_div{
+    position: absolute;
+    top: 27rem;
+    left: 12rem;
+}

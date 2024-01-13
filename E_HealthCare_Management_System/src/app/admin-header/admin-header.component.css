@@ -1,0 +1,18 @@
+div.row {
+    padding: 0;
+}
+
+.navbar-toggler {
+    background-color: black;
+    --bs-btn-color: white;
+}
+
+h1 {
+    color: #587f1b;
+    margin-top: 2px;
+    margin-left: 147px;
+    font-family: 'bootstrap-icons';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3rem;
+}

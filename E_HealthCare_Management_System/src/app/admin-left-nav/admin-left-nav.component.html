@@ -1,0 +1,103 @@
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 col-xxl-12" style="padding:0px;margin-right: 20px;">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart"
+                aria-labelledby="offcanvasStartLabel" style="top: 73px;">
+                <div class="offcanvas-header" style="background-color: white;">
+                    <h5 class="offcanvas-title" id="offcanvasStartLabel">ADMIN PANEL</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <a routerLink="dashboard" class="nav-links">
+                        <div class="grid text-center">
+                            <div class="g-col-6 g-col-md-4">
+                                <span style="color: white;
+                                    font-size: 20px;
+                                    font-weight: bolder;font-family: 'bootstrap-icons';">
+                                    DASHBOARD
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a routerLink="my-profile">
+                        <div class="grid text-center">
+                            <div class="g-col-6 g-col-md-4">
+                                <span style="color: white;
+                                    font-size: 20px;
+                                    font-weight: bolder;font-family: 'bootstrap-icons';">
+                                    MY PROFILE
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button acc-item-div" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                    style="font-size: 20px;font-family: cursive;padding-left: 7.5rem!important;background-color: #A8001F;">
+                                    <span style="margin-left: 24px;font-family: 'bootstrap-icons';">
+                                        DOCTORS
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body" style="padding: 0;">
+                                    <ul class="list-group">
+                                        <a routerLink="add-new-doctor">
+                                            <li class="list-group-item dashboard-list">Add New Doctor</li>
+                                        </a>
+                                        <a routerLink="edit-view-all-doctors">
+                                            <li class="list-group-item" style="padding-left: 76px;">Edit And View All
+                                                Doctors</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button acc-item-div" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"
+                                    style="font-size: 20px;font-family: cursive;padding-left: 7.5rem!important;background-color: #A8001F;">
+                                    <span style="margin-left: 21px;font-family: 'bootstrap-icons';">
+                                        PATIENTS
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body" style="padding: 0;">
+                                    <ul class="list-group">
+                                        <a routerLink="add-new-patient">
+                                            <li class="list-group-item dashboard-list">Add New Patient</li>
+                                        </a>
+                                        <a routerLink="edit-view-all-patient">
+                                            <li class="list-group-item" style="padding-left: 76px;">Edit And View All
+                                                Patients</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a routerLink="/login">
+                            <div class="grid text-center" style="margin-top: 3px;">
+                                <div class="g-col-6 g-col-md-4" style="margin-bottom: 2px">
+                                    <span style="color: white;
+                                                font-size: 20px;
+                                                font-family: cursive;
+                                                font-weight: bolder;">
+                                        Log Out
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    

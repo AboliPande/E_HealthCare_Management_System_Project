@@ -1,0 +1,68 @@
+.card_div{
+    width: 28rem;
+    height: 63rem;
+    background-color: #A8001F;
+    color: aliceblue;
+    font-size: 29px;
+    margin-left: 21px;
+    border-radius: 23px;
+    margin-top: -65px;
+}
+.text-success{
+    background-color: rgb(255, 234, 0);
+}
+.col-xxl-4{
+    width: 39.333333%;
+    height: 63rem;
+}
+/*.row .align-items-center{
+    height: 66rem;
+}*/
+.form_div div{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+.form_div{
+    margin-top: 6px;
+}
+.card-header{
+    font-family: 'bootstrap-icons';
+    color: white;
+    margin-top: 6px;
+}
+.update_patient{
+    width: 150px;
+    height: 41px;
+    margin-left: 15rem;
+    margin-top: 27px;
+}
+.clearbtn{
+    position: absolute;
+    color: #f7f8fb;
+    font-size: large;
+    font-weight: bolder;
+    width: 9rem;
+    bottom: 7rem;
+    height: 3rem;
+    left: 3rem;
+}
+.update_patient{
+    position: absolute;
+    color: #f7f8fb;
+    font-size: large;
+    font-weight: bolder;
+    width: 11rem;
+    height: 3rem;
+    left: 0rem;
+    bottom: 7rem;
+}
+input{
+    color: black;
+    font-weight: 500;
+}
+.spinner_div{
+    position: absolute;
+    top: 242px;
+    left: 189px;
+}

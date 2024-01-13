@@ -1,0 +1,39 @@
+<div class="container-fluid main_div">
+<div style="margin-bottom: 2rem;margin-left: 75rem;">
+    <a routerLink="/admin/add-new-doctor">
+    <button  style="background-color: #A8001F;"><img src="https://img.icons8.com/?size=1x&id=11255&format=png" alt="" style="height: 2rem;margin-top: 1px;background-color: white;margin-bottom: 7px;width: 2rem;"><span style="color:white;font-size: 26px;margin-left: 12px;font-family: emoji;">Add a new doctor</span></button>
+    </a>
+</div>
+<table border>
+    <thead>
+    <tr>
+        <th>DOCTOR'S ID</th>
+        <th>DOCTOR'S NAME</th>
+        <th>GENDER</th>
+        <th>SPECIALIST</th>
+        <th>ADDRESS</th>
+        <th>CONTACT NO</th>
+        <th>EMAIL ID</th>
+        <th>PASSWORD</th>
+        <th style="padding-left: 4rem;
+        font-size: 20px;">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of doctors">
+        <td>{{item.doctor_id}}</td>
+        <td>{{item.doctor_name}}</td>
+        <td>{{item.gender}}</td>
+        <td>{{item.specialist}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.contact_no}}</td>
+        <td>{{item.email_id}}</td>
+        <td>{{item.password}}</td>
+        <td style="width: 51rem;padding-left: 5rem;">
+            <button (click)="updateDoctor(item.doctor_id)" class="btn btn-info updatebtn">Update</button>
+            <button (click)="deleteDoctor(item.doctor_id)" class="btn btn-danger deletebtn">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>
